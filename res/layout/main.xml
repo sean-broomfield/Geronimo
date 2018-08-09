@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/titan2"
+              android:weightSum="1" android:baselineAligned="false">
+
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_marginTop="120dp"
+              android:id="@+id/player1"
+              android:gravity="center_horizontal"
+              android:hint="@string/player1hint"/>
+
+    <RadioGroup android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/radio1"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center_horizontal">
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/selector_xbox"
+                android:button="@android:color/transparent"
+                android:id="@+id/xbox1"
+                android:checked="false"
+                android:layout_marginRight="10dp"/>
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/selector_ps"
+                android:button="@android:color/transparent"
+                android:id="@+id/ps1"
+                android:checked="false"
+                android:layout_marginLeft="10dp"/>
+
+    </RadioGroup>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:text="@string/versus"
+              android:textColor="#FFFFFF"
+              android:textSize="50dp"/>
+
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_marginTop="50dp"
+              android:id="@+id/player2"
+              android:gravity="center_horizontal"
+              android:hint="@string/player2hint"/>
+
+    <RadioGroup android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/radio2"
+                android:layout_gravity="center_horizontal">
+
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/selector_xbox"
+                android:button="@android:color/transparent"
+                android:id="@+id/xbox2"
+                android:checked="false"
+                android:layout_marginRight="10dp"/>
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/selector_ps"
+                android:button="@android:color/transparent"
+                android:id="@+id/ps2"
+                android:checked="false"
+                android:layout_marginLeft="10dp"/>
+    </RadioGroup>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:text="START!"
+            android:onClick="fightBegin"
+            android:textSize="35dp"/>
+
+</LinearLayout>
+

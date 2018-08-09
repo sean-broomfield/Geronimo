@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GeronimoApp</string>
+    <string name="player1hint">1st Player GT/PSN</string>
+    <string name="player2hint">2nd Player GT/PSN</string>
+    <string name="versus">VS</string>
+</resources>
